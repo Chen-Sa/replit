@@ -5,6 +5,6 @@ import proxyRouter from "./proxy";
 const router: IRouter = Router();
 
 router.use(healthRouter);
-router.use(proxyRouter);
+router.use("/v1", proxyRouter);
 
 export default router;
